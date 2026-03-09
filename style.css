@@ -1,0 +1,216 @@
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Full page setup */
+html, body{
+height:100%;
+}
+
+body{
+display:flex;
+flex-direction:column;
+min-height:100vh;
+background:#f4f4f4;
+color:#333;
+line-height:1.6;
+}
+
+/* Navigation */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#333;
+color:white;
+padding:15px 40px;
+}
+
+nav .logo{
+font-size:24px;
+font-weight:bold;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#ffd700;
+}
+
+/* Hero Section */
+.hero{
+text-align:center;
+padding:100px 20px;
+background:linear-gradient(to right,#4facfe,#00f2fe);
+color:white;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.hero button{
+padding:12px 25px;
+border:none;
+background:#333;
+color:white;
+font-size:16px;
+cursor:pointer;
+border-radius:5px;
+transition:0.3s;
+}
+
+.hero button:hover{
+background:black;
+}
+
+/* Features / Cards */
+.features{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:50px;
+flex-wrap:wrap;
+background:#e0f7fa; /* subtle color for card section */
+}
+
+.card{
+background:white;
+padding:30px;
+width:250px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card h2{
+margin-bottom:10px;
+color:#4facfe;
+}
+
+/* Contact Section */
+.contact-form-section{
+background:#e0f7fa; /* soft blue */
+padding:50px 20px;
+flex:1;
+}
+
+.contact-container{
+display:flex;
+justify-content:center;
+gap:50px;
+flex-wrap:wrap;
+}
+
+/* Contact Form */
+.contact-form{
+background:white;
+padding:30px;
+border-radius:10px;
+width:350px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+display:flex;
+flex-direction:column;
+}
+
+.contact-form h2{
+margin-bottom:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:5px;
+font-size:16px;
+width:100%;
+}
+
+.contact-form button{
+padding:12px;
+background:#4facfe;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.contact-form button:hover{
+background:#00c6ff;
+}
+
+/* Contact Info Cards */
+.contact-info-cards{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+/* Footer */
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:auto;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+flex-direction:column;
+margin-top:10px;
+}
+
+.features{
+flex-direction:column;
+align-items:center;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.contact-container{
+flex-direction:column;
+align-items:center;
+}
+
+}
